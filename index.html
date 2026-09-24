@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Innovative Ecopure Technologies Private Limited</title>
-  <meta name="description" content="Innovative Ecopure Technologies - Water & Wastewater Treatment Solutions">
+  <title>Innovative Ecopure Technologies</title>
 
   <style>
     * {
@@ -16,55 +15,49 @@
       margin: 0;
       min-height: 100vh;
       font-family: Arial, Helvetica, sans-serif;
-      background: #eef2f1;
-      color: #20334d;
+      background: #eef2ef;
+      color: #1d2d3d;
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 30px 18px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 480px;
-      text-align: center;
+      justify-content: center;
+      padding: 20px;
     }
 
     .card {
-      background: white;
+      width: 100%;
+      max-width: 520px;
+      background: #ffffff;
       border-radius: 24px;
-      padding: 38px 28px 30px;
-      box-shadow: 0 12px 40px rgba(32, 51, 77, 0.12);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
     }
 
     .logo {
       width: 150px;
-      max-width: 55%;
-      height: auto;
-      margin: 0 auto 22px;
-      display: block;
+      max-width: 60%;
+      margin-bottom: 22px;
     }
 
     h1 {
-      font-size: 25px;
+      margin: 0;
+      font-size: 26px;
       line-height: 1.25;
-      margin: 0 0 10px;
-      color: #20334d;
+      color: #1d2d3d;
     }
 
     .subtitle {
-      font-size: 15px;
-      line-height: 1.5;
-      margin: 0;
-      color: #526273;
+      margin: 12px 0 8px;
+      font-size: 17px;
+      color: #53636b;
     }
 
     .services {
-      margin: 14px 0 30px;
-      font-size: 14px;
-      font-weight: 700;
+      margin: 0 0 28px;
+      font-size: 15px;
+      font-weight: 600;
       letter-spacing: 1px;
-      color: #4f7f2d;
+      color: #3e7465;
     }
 
     .buttons {
@@ -76,113 +69,75 @@
     .button {
       display: block;
       width: 100%;
-      padding: 15px 18px;
+      padding: 15px 20px;
       border-radius: 12px;
       text-decoration: none;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
+      font-size: 16px;
+      font-weight: 600;
       transition: 0.2s ease;
     }
 
     .button:hover {
-      transform: translateY(-1px);
-      opacity: 0.92;
+      transform: translateY(-2px);
     }
 
     .primary {
-      background: #20334d;
-      color: white;
+      background: #1d2d3d;
+      color: #ffffff;
     }
 
     .secondary {
-      background: #edf3eb;
-      color: #315d2b;
-      border: 1px solid #cbdcc5;
+      background: #dce9e3;
+      color: #1d2d3d;
+    }
+
+    .outline {
+      background: #ffffff;
+      color: #1d2d3d;
+      border: 1px solid #d4dcda;
     }
 
     .footer {
-      margin-top: 25px;
-      font-size: 12px;
-      color: #7a8793;
-      line-height: 1.5;
+      margin-top: 28px;
+      font-size: 13px;
+      color: #7a8588;
     }
 
-    /* Modal */
+    /* Contact form */
 
-    .modal {
+    .contact-section {
       display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(20, 30, 40, 0.72);
-      z-index: 1000;
-      padding: 20px;
-      overflow-y: auto;
-    }
-
-    .modal-content {
-      max-width: 450px;
-      margin: 50px auto;
-      background: white;
-      border-radius: 20px;
-      padding: 28px;
-      position: relative;
+      margin-top: 25px;
       text-align: left;
     }
 
-    .close {
-      position: absolute;
-      right: 18px;
-      top: 14px;
-      font-size: 28px;
-      color: #6b7785;
-      cursor: pointer;
-      border: none;
-      background: none;
+    .contact-section.active {
+      display: block;
     }
 
-    .modal h2 {
-      margin: 0 35px 8px 0;
-      color: #20334d;
-      font-size: 23px;
-    }
-
-    .modal p {
-      margin: 0 0 22px;
-      color: #657382;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .form-group {
-      margin-bottom: 14px;
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1d2d3d;
     }
 
     label {
       display: block;
       margin-bottom: 6px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #354557;
+      font-size: 14px;
+      font-weight: 600;
+      color: #34464f;
     }
 
     input,
-    textarea,
-    select {
+    textarea {
       width: 100%;
-      padding: 12px 13px;
-      border: 1px solid #d5dce2;
+      padding: 13px;
+      margin-bottom: 15px;
+      border: 1px solid #d4dcda;
       border-radius: 9px;
-      font-size: 14px;
+      font-size: 15px;
       font-family: inherit;
-      outline: none;
-    }
-
-    input:focus,
-    textarea:focus,
-    select:focus {
-      border-color: #6d9950;
     }
 
     textarea {
@@ -190,64 +145,48 @@
       resize: vertical;
     }
 
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #3e7465;
+    }
+
     .submit-button {
       width: 100%;
-      margin-top: 6px;
-      padding: 14px;
       border: none;
+      padding: 14px;
       border-radius: 10px;
-      background: #20334d;
+      background: #1d2d3d;
       color: white;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
     }
 
-    .brochure-options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .brochure-option {
-      border: 1px solid #d5dce2;
-      border-radius: 10px;
+    .back-button {
+      width: 100%;
+      margin-top: 10px;
       padding: 12px;
+      border: none;
+      background: transparent;
+      color: #53636b;
       cursor: pointer;
-    }
-
-    .brochure-option:hover {
-      border-color: #6d9950;
-    }
-
-    .brochure-option input {
-      width: auto;
-      margin-right: 8px;
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 15px;
-      }
-
-      .card {
-        padding: 32px 22px 25px;
-      }
-
-      h1 {
-        font-size: 22px;
-      }
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="card">
+  <div class="card">
 
-      <img src="iEcopure_logo.png" alt="Innovative Ecopure Technologies" class="logo">
+    <div id="mainContent">
+
+      <img
+        src="iEcopure_logo.png"
+        alt="Innovative Ecopure Technologies"
+        class="logo"
+      >
 
       <h1>Innovative Ecopure Technologies Private Limited</h1>
 
@@ -255,34 +194,40 @@
         Water &amp; Wastewater Treatment Solutions
       </p>
 
-      <div class="services">
+      <p class="services">
         WTP • STP • ETP • CETP • ZLD
-      </div>
+      </p>
 
       <div class="buttons">
 
-        <button class="button primary" onclick="openContact()">
+        <button
+          class="button primary"
+          onclick="showContactForm()"
+        >
           Contact Us
-        </button>
-
-        <button class="button secondary" onclick="openBrochures()">
-          Brochures
         </button>
 
         <a
           class="button secondary"
+          href="brochures.html"
+        >
+          Brochures
+        </a>
+
+        <a
+          class="button outline"
           href="https://i-ecopure.com/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Website
         </a>
 
         <a
-          class="button secondary"
+          class="button outline"
           href="https://www.linkedin.com/company/innovative-ecopure-technologies-p-limited/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>
@@ -294,214 +239,151 @@
       </div>
 
     </div>
-  </div>
 
 
-  <!-- CONTACT FORM -->
+    <!-- CONTACT FORM -->
 
-  <div id="contactModal" class="modal">
+    <div
+      id="contactSection"
+      class="contact-section"
+    >
 
-    <div class="modal-content">
-
-      <button class="close" onclick="closeContact()">×</button>
-
-      <h2>Let's Connect</h2>
-
-      <p>
-        Tell us about your requirement and our team will get in touch with you.
-      </p>
+      <h2>Contact Us</h2>
 
       <form
         action="https://formsubmit.co/info@i-ecopure.com"
         method="POST"
       >
 
-        <input type="hidden" name="_subject"
-               value="New Contact Enquiry - Innovative Ecopure">
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Contact Enquiry - Innovative Ecopure"
+        >
 
-        <input type="hidden" name="_captcha" value="false">
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
 
-        <input type="hidden" name="_template" value="table">
+        <label for="name">
+          Name
+        </label>
 
-        <div class="form-group">
-          <label>Name *</label>
-          <input type="text" name="name" required>
-        </div>
+        <input
+          type="text"
+          id="name"
+          name="Name"
+          required
+        >
 
-        <div class="form-group">
-          <label>Email *</label>
-          <input type="email" name="email" required>
-        </div>
 
-        <div class="form-group">
-          <label>Phone Number *</label>
-          <input type="tel" name="phone" required>
-        </div>
+        <label for="email">
+          Email
+        </label>
 
-        <div class="form-group">
-          <label>Country</label>
-          <input type="text" name="country">
-        </div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        >
 
-        <div class="form-group">
-          <label>Company Name</label>
-          <input type="text" name="company">
-        </div>
 
-        <div class="form-group">
-          <label>Designation</label>
-          <input type="text" name="designation">
-        </div>
+        <label for="phone">
+          Phone Number
+        </label>
 
-        <div class="form-group">
-          <label>Requirement / Message *</label>
-          <textarea name="message" required></textarea>
-        </div>
+        <input
+          type="tel"
+          id="phone"
+          name="Phone Number"
+          required
+        >
 
-        <button type="submit" class="submit-button">
+
+        <label for="country">
+          Country
+        </label>
+
+        <input
+          type="text"
+          id="country"
+          name="Country"
+          required
+        >
+
+
+        <label for="company">
+          Company Name
+        </label>
+
+        <input
+          type="text"
+          id="company"
+          name="Company Name"
+          required
+        >
+
+
+        <label for="designation">
+          Designation
+        </label>
+
+        <input
+          type="text"
+          id="designation"
+          name="Designation"
+          required
+        >
+
+
+        <label for="message">
+          Requirement / Message
+        </label>
+
+        <textarea
+          id="message"
+          name="Requirement / Message"
+          required
+        ></textarea>
+
+
+        <button
+          type="submit"
+          class="submit-button"
+        >
           Submit Enquiry
         </button>
 
       </form>
 
-    </div>
-  </div>
-
-
-  <!-- BROCHURE FORM -->
-
-  <div id="brochureModal" class="modal">
-
-    <div class="modal-content">
-
-      <button class="close" onclick="closeBrochures()">×</button>
-
-      <h2>Get Our Brochures</h2>
-
-      <p>
-        Please share your details to access our company information and solutions brochures.
-      </p>
-
-      <form
-        id="brochureForm"
-        action="https://formsubmit.co/info@i-ecopure.com"
-        method="POST"
+      <button
+        class="back-button"
+        onclick="hideContactForm()"
       >
-
-        <input type="hidden" name="_subject"
-               value="New Brochure Download - Innovative Ecopure">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="hidden" name="_template" value="table">
-
-        <input type="hidden" id="brochureRedirect" name="_next" value="">
-
-        <div class="form-group">
-          <label>Name *</label>
-          <input type="text" name="name" required>
-        </div>
-
-        <div class="form-group">
-          <label>Email *</label>
-          <input type="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label>Phone Number *</label>
-          <input type="tel" name="phone" required>
-        </div>
-
-        <div class="form-group">
-          <label>Select Brochure *</label>
-
-          <div class="brochure-options">
-
-            <label class="brochure-option">
-              <input
-                type="radio"
-                name="brochure"
-                value="Company Profile"
-                data-file="iEcopure_FB.pdf"
-                required
-              >
-              Company Profile
-            </label>
-
-            <label class="brochure-option">
-              <input
-                type="radio"
-                name="brochure"
-                value="Solutions & Projects"
-                data-file="iEcopure_3.pdf"
-              >
-              Solutions &amp; Projects
-            </label>
-
-          </div>
-        </div>
-
-        <button type="submit" class="submit-button">
-          Get Brochure
-        </button>
-
-      </form>
+        ← Back
+      </button>
 
     </div>
+
   </div>
 
 
   <script>
 
-    function openContact() {
-      document.getElementById("contactModal").style.display = "block";
+    function showContactForm() {
+      document.getElementById("mainContent").style.display = "none";
+      document.getElementById("contactSection").classList.add("active");
+      window.scrollTo(0, 0);
     }
 
-    function closeContact() {
-      document.getElementById("contactModal").style.display = "none";
+    function hideContactForm() {
+      document.getElementById("contactSection").classList.remove("active");
+      document.getElementById("mainContent").style.display = "block";
+      window.scrollTo(0, 0);
     }
-
-    function openBrochures() {
-      document.getElementById("brochureModal").style.display = "block";
-    }
-
-    function closeBrochures() {
-      document.getElementById("brochureModal").style.display = "none";
-    }
-
-    window.onclick = function(event) {
-
-      if (event.target === document.getElementById("contactModal")) {
-        closeContact();
-      }
-
-      if (event.target === document.getElementById("brochureModal")) {
-        closeBrochures();
-      }
-
-    };
-
-
-    document.getElementById("brochureForm").addEventListener("submit", function(event) {
-
-      const selected = document.querySelector(
-        'input[name="brochure"]:checked'
-      );
-
-      if (!selected) {
-        event.preventDefault();
-        alert("Please select a brochure.");
-        return;
-      }
-
-      const file = selected.getAttribute("data-file");
-
-      document.getElementById("brochureRedirect").value =
-        window.location.origin +
-        window.location.pathname +
-        file;
-
-    });
 
   </script>
 
